@@ -1,0 +1,82 @@
+{
+  "builder_name": "clue",
+  "citation": "\n@misc{xu2020clue,\n    title={CLUE: A Chinese Language Understanding Evaluation Benchmark},\n    author={Liang Xu and Xuanwei Zhang and Lu Li and Hai Hu and Chenjie Cao and Weitang Liu and Junyi Li and Yudong Li and Kai Sun and Yechen Xu and Yiming Cui and Cong Yu and Qianqian Dong and Yin Tian and Dian Yu and Bo Shi and Jun Zeng and Rongzhao Wang and Weijian Xie and Yanting Li and Yina Patterson and Zuoyu Tian and Yiwen Zhang and He Zhou and Shaoweihua Liu and Qipeng Zhao and Cong Yue and Xinrui Zhang and Zhengliang Yang and Zhenzhong Lan},\n    year={2020},\n    eprint={2004.05986},\n    archivePrefix={arXiv},\n    primaryClass={cs.CL}\n}\n",
+  "config_name": "drcd",
+  "dataset_size": 47657980,
+  "description": "CLUE, A Chinese Language Understanding Evaluation Benchmark\n(https://www.cluebenchmarks.com/) is a collection of resources for training,\nevaluating, and analyzing Chinese language understanding systems.\n\n",
+  "download_checksums": {
+    "https://storage.googleapis.com/cluebenchmark/tasks/drcd_public.zip": {
+      "num_bytes": 7264200,
+      "checksum": null
+    }
+  },
+  "download_size": 7264200,
+  "features": {
+    "id": {
+      "dtype": "string",
+      "id": null,
+      "_type": "Value"
+    },
+    "context": {
+      "dtype": "string",
+      "id": null,
+      "_type": "Value"
+    },
+    "question": {
+      "dtype": "string",
+      "id": null,
+      "_type": "Value"
+    },
+    "answers": {
+      "feature": {
+        "text": {
+          "dtype": "string",
+          "id": null,
+          "_type": "Value"
+        },
+        "answer_start": {
+          "dtype": "int32",
+          "id": null,
+          "_type": "Value"
+        }
+      },
+      "length": -1,
+      "id": null,
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "https://github.com/DRCKnowledgeTeam/DRCD",
+  "license": "",
+  "post_processed": null,
+  "post_processing_size": null,
+  "size_in_bytes": 54922180,
+  "splits": {
+    "test": {
+      "name": "test",
+      "num_bytes": 4983713,
+      "num_examples": 3493,
+      "dataset_name": "clue"
+    },
+    "train": {
+      "name": "train",
+      "num_bytes": 37450192,
+      "num_examples": 26936,
+      "dataset_name": "clue"
+    },
+    "validation": {
+      "name": "validation",
+      "num_bytes": 5224075,
+      "num_examples": 3524,
+      "dataset_name": "clue"
+    }
+  },
+  "supervised_keys": null,
+  "task_templates": null,
+  "version": {
+    "version_str": "1.0.0",
+    "description": "",
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}
